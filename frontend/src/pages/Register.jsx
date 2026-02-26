@@ -65,9 +65,7 @@ export default function Register() {
         <div id="fedo">
             <div className="min-h-screen flex items-center justify-center bg-gray-50">
                 <form className="w-full max-w-md bg-white p-6 rounded-lg shadow">
-                  <h1 className="regisztracio-cim" style={{ color: "rgba(4, 24, 139, 1)", textAlign: "center", marginBottom: "20px", fontSize: "3rem", fontWeight: "bold", marginTop: "40px" }}>
-  Regisztráció
-</h1>
+                    <h1 className="text-center">Regisztráció</h1>
 
                     <label
                         htmlFor="email"
