@@ -82,9 +82,10 @@ export default function Login() {
         gap: 12,
       }}
     >
-      <h2 id="login-heading">Bejelentkezés</h2>
-
-      <div>
+      <h2 id="login-heading" style={{ color: "rgba(4, 24, 139, 1)", textAlign: "center", marginBottom: "20px", fontSize: "2.5rem", fontWeight: "bold", marginTop: "40px" }}>
+  Bejelentkezés
+</h2>
+      <div style={{ marginTop: "-15px" }}>
         <label htmlFor="email">E-mail cím</label>
         <input
           id="email"
