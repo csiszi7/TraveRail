@@ -122,3 +122,18 @@
 .register-form button[type="submit"]:hover {
   background-color: #1e40af; /* hover:bg-blue-700 */
 }
+
+
+nav {
+    padding: 10px 0; /* Kisebb belső térköz, hogy ne legyen olyan vastag */
+    margin-bottom: 20px; /* Biztosítja a távolságot a Regisztráció felirattól */
+    margin-top: 120px;  /* Megnövelt felső margó, hogy ne takarja ki a nav */
+}
+
+/* Ha mobilon vagyunk, még jobban összehúzzuk */
+@media screen and (max-width: 600px) {
+    #fedo {
+        padding-top: 20px !important; /* Kevesebb üres hely a tetején */
+        margin-top: 120px !important;  /* Megnövelt felső margó, hogy ne takarja ki a nav */
+    }
+}
