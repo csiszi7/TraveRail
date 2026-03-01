@@ -15,6 +15,15 @@ footer {
   box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15);
 }
 
+h1 {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  transition: 0.2s ease;
+  white-space: nowrap;
+}
+
 footer a {
   color: white;
   text-decoration: none;
@@ -39,20 +48,17 @@ footer a:hover {
   }
 }
 
-/* Mobil */
 @media (max-width: 600px) {
+
   footer {
-    flex-direction: column;   /* egymás alá */
-    gap: 10px;
-    padding: 20px 0;
+    padding: 6px 0;        /* kisebb felső-alsó tér */
+    gap: 6px;              /* kisebb link távolság */
   }
 
   footer a {
-    font-size: 14px;
+    font-size: 12px;       /* kisebb szöveg */
+    line-height: 1.2;      /* kisebb sorköz */
+    margin: 2px 0;
   }
-}
 
-/* hogy ne takarja ki a tartalmat */
-body {
-  padding-bottom: 90px;
 }

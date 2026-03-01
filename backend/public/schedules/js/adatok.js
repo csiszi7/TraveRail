@@ -1,6 +1,6 @@
 
 // Járattípusok
-let jarat = ['Napfény Intercity', 'Civis Interrégió', 'Sebesvonat', 'Személyvonat', 'Hortobágy Eurocity', 'S10','Corona Intercity', 'Nyírség Intercity', 'Tokaj Intercity', 'Mecsek Intercity','Tisza-Szamos Eurocity', 'Mátra Interrégió'];
+let jarat = ['Napfény Intercity', 'Civis Interrégió', 'Sebesvonat', 'Személyvonat', 'Hortobágy Eurocity', 'S10','Corona Intercity', 'Nyírség Intercity', 'Tokaj Intercity', 'Mecsek Intercity','Tisza-Szamos Eurocity', 'IR85 Mátra Interrégió'];
 
 
 // indulo állomások
@@ -81,10 +81,10 @@ let kortablak = ['Kisgyerek (0-3 éves)',
 //Bp-Nyugati-> Miskolc(IC),        |kesz|-
 //Bp-Keleti-> Miskolc(IC,S,SZ),    |kesz|-
 //Bp-Déli-> Győr(S10),             |kesz|- 
-//Kál-Kápolna-> Kisújszállás       |kesz|
-//Kisújszállás-> Kál-Kápolna       |kesz|
+//Kál-Kápolna-> Kisújszállás       |kesz|-
+//Kisújszállás-> Kál-Kápolna       |kesz|-
 //Bp-Keleti-> Gyöngyös             |Munkálat alatt|
-let idotartam = ['2:39(S)','2:34(Ic)','2:23(Ic)','2:25(Ic)','1:11(Sz)','1:42(Sz)','1:50(S10)','2:45(IC)','3:28(SZ)','3:13(IC)','3:38(SZ)','3:07(IC)','3:00(IC)','2:58(IR)','3:37(IC)','2:47(IC)','2:49(EC)','2:45(IC)','4:49(IC)','4:34(IC)','4:40(IC)','2:49(SZ)','2:02(IC)','2:04(IC)','2:06(IC)','2:29(S)','3:28(SZ)','2:42(EC)','1:36(SZ)','1:37(SZ)','1:59(SZ)','3:23(SZ)','3:03(IC)','3:23(SZ)'];
+let idotartam = ['2:39(S)','2:34(Ic)','2:23(Ic)','2:25(Ic)','1:11(Sz)','1:42(Sz)','1:50(S10)','2:45(IC)','3:28(SZ)','3:13(IC)','3:38(SZ)','3:07(IC)','3:00(IC)','2:58(IR)','3:37(IC)','2:47(IC)','2:49(EC)','2:45(IC)','4:49(IC)','4:34(IC)','4:40(IC)','2:49(SZ)','2:02(IC)','2:04(IC)','2:06(IC)','2:29(S)','3:28(SZ)','2:42(EC)','1:36(SZ)','1:37(SZ)','1:59(SZ)','3:23(SZ)','3:03(IC)','1:24(SZ)'];
 
 let ar = [2990, 3490, 3990, 4500, 1990, 2490, 1590, 4990, 5990, 5490, 6290, 5790, 5200, 5100, 6490, 4290, 4390, 4590, 6990, 7990, 7490, 4390, 3890, 3990, 4090, 2790, 5990, 4490];
 

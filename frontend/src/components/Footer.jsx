@@ -10,6 +10,8 @@ const Footer = () => {
       <a href='https://www.mavcsoport.hu/mav-szemelyszallitas/nemzetkozi-utazas' target="_blank" rel="noopener noreferrer">Nemzetközi Utazás</a>
       <a href='https://www.mavcsoport.hu/ugyfelszolgalat/mav-ugyfelszolgalat' target="_blank" rel="noopener noreferrer">Ügyfészolgálat</a>
       <a href='https://jegy.mav.hu/bejelentkezes?compensationRequest=compensationRequest' target="_blank" rel="noopener noreferrer">Késési biztosítás</a>
+      <h1>Elérhetőség: +36 1 2 49 59 69</h1>
+      <h1>Az adatokat bizalmasan kezeljük.</h1>
     </footer>
   )
 }

@@ -1,3 +1,0 @@
-[1106/143228.452:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:108] CreateFile: A rendszer nem találja a megadott fájlt. (0x2)
-[0202/112601.922:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:108] CreateFile: A rendszer nem találja a megadott fájlt. (0x2)
-[0202/112602.290:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:108] CreateFile: A rendszer nem találja a megadott fájlt. (0x2)

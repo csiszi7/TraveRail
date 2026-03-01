@@ -170,6 +170,7 @@ export default function Register() {
                             type="checkbox"
                             id="privacy"
                             name="privacy"
+                            style={{ marginRight: "10px" }} // <<< Térköz a pipa után
                             className="mr-2"
                             onChange={() => setTerms(!terms)}
                         />
@@ -187,6 +188,7 @@ export default function Register() {
                             type="checkbox"
                             id="terms"
                             name="terms"
+                            style={{ marginRight: "10px" }} // <<< Térköz a pipa után
                             className="mr-2"
                             onChange={() => setPrivacy(!privacy)}
                         />
@@ -199,6 +201,8 @@ export default function Register() {
                     </div>
 
                     <button
+                    type='submit'
+                    id="regisztracio"
                         style={{
                             flex: 1,
                             color: 'black',

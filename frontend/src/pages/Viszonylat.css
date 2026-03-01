@@ -2,6 +2,7 @@
 
 /* 1. Alapvető resztek */
 :root {
+  overflow-y: auto;
   --primary-color: #00569a; /* Egy kék szín a kiemeléshez, pl. MÁV kék */
   --secondary-color: #f0f0f0; /* Világosszürke háttér */
   --border-color: #ccc;

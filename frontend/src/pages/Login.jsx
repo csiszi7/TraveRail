@@ -69,9 +69,15 @@ export default function Login() {
   };
 
   return (
+<<<<<<< HEAD
     <div id="login-kontener">
     <form id="login-form"
       onSubmit={(event) => {bejelentkezes(event)}}
+=======
+    <div id="fedo">
+    <form
+      // onSubmit={(event) => {bejelentkezes(event)}}
+>>>>>>> 0f816836cde30b8d239fec9f581db7d41c56a386
       aria-labelledby="login-heading"
       style={{
         margin: "0 auto",
@@ -81,9 +87,16 @@ export default function Login() {
         gap: 12,
       }}
     >
+<<<<<<< HEAD
       <h1 id="login-heading">Bejelentkezés</h1>
 
       <div>
+=======
+      <h2 id="login-heading" style={{ color: "rgba(4, 24, 139, 1)", textAlign: "center", marginBottom: "20px", fontSize: "2.5rem", fontWeight: "bold", marginTop: "40px" }}>
+  Bejelentkezés
+</h2>
+      <div style={{ marginTop: "-15px" }}>
+>>>>>>> 0f816836cde30b8d239fec9f581db7d41c56a386
         <label htmlFor="email">E-mail cím</label>
         <input
           id="email"
@@ -119,8 +132,13 @@ export default function Login() {
         </div>
       )} */}
 
+<<<<<<< HEAD
       <div id="login-gombok">
         <button type="submit"  style={{ flex: 1, padding: "10px 12px" }} onClick={bejelentkezes}>
+=======
+      <div style={{ display: "flex", gap: 8 }}>
+        <button type="submit" id="bejelentkezes"  style={{ flex: 1, padding: "10px 12px" }} onClick={bejelentkezes}>
+>>>>>>> 0f816836cde30b8d239fec9f581db7d41c56a386
           Bejelentkezés 
         </button>
         <p>Ha még nem regisztrált:</p>

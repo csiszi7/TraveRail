@@ -49,6 +49,10 @@ box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     flex-direction: row;
 }
 
+#fedo {
+  padding-top: 80px;
+}
+
 .register a {
   display: block;          /* <<< KÜLÖN SORBA TESZI A LINKEKET */
   color: white;
@@ -160,6 +164,7 @@ box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   background-color: #1e40af; /* hover:bg-blue-700 */
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 600px) {
   #register-kontener {
     margin: 80px auto 0px;
@@ -178,4 +183,19 @@ box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     height: auto;
     /* margin-top: 160px; */
   }
+=======
+
+nav {
+    padding: 10px 0; /* Kisebb belső térköz, hogy ne legyen olyan vastag */
+    margin-bottom: 20px; /* Biztosítja a távolságot a Regisztráció felirattól */
+    margin-top: 120px;  /* Megnövelt felső margó, hogy ne takarja ki a nav */
+}
+
+/* Ha mobilon vagyunk, még jobban összehúzzuk */
+@media screen and (max-width: 600px) {
+    #fedo {
+        padding-top: 20px !important; /* Kevesebb üres hely a tetején */
+        margin-top: 120px !important;  /* Megnövelt felső margó, hogy ne takarja ki a nav */
+    }
+>>>>>>> 0f816836cde30b8d239fec9f581db7d41c56a386
 }

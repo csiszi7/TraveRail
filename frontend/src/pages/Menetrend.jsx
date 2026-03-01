@@ -101,17 +101,19 @@ const Menetrend = () => {
                     border: '1px solid #ddd',
                     borderRadius: 12,
                     background: '#fff',
+                    
                 }}
             >
                 <h1 id="menetrend-heading">Menetrend</h1>
 
                 {/* Honnan */}
-                <div style={{ marginBottom: 12 }}>
+                <div style={{ marginBottom: 12}}>
                     <label htmlFor="from">Honnan?</label>
                     <select
                         id="from"
                         value={from}
                         onChange={(e) => setFrom(e.target.value)}
+                        
                         style={{ width: '100%', padding: 8, marginTop: 6 }}
                     >
                         <option value="">Válassz...</option>

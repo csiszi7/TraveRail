@@ -32,7 +32,9 @@ const Home = () => {
         <h1 className="welcome-title-style">Szép napot!</h1>
         <p className="welcome-text-style" style={
           {
-            color: "white",
+            border: "2px solid rgba(4, 24, 139, 1)",
+            backgroundColor: "rgba(255, 255, 255, 0.8)",
+            color: "rgba(45, 4, 139, 1)",
           }
         }>
           Itt mindent megtalálsz, amire a kényelmes utazáshoz szükséged van.
