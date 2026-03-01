@@ -86,3 +86,13 @@
 .veglegesites-gomb:active {
   transform: scale(0.97);
 }
+
+@media screen and (max-width: 750px) {
+  .foglalas-tarto {
+    padding-bottom: 150px;
+  }
+
+  .foglalas-kepek {
+    flex-direction: column;
+  }
+}

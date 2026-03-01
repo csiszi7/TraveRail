@@ -92,6 +92,9 @@
 
 
 @media screen and (max-width: 750px) {
+  .jegy-tarto {
+    padding-bottom: 150px;
+  }
   .jegy-kepek {
     flex-direction: column;
   }  

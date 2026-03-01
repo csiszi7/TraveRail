@@ -93,18 +93,17 @@ const Menetrend = () => {
     };
 
     return (
-        <div id="fedo">
-            <form
+        <div id="menetrend-kontener">
+            <form id="menetrend-form"
                 style={{
                     maxWidth: 450,
                     margin: '0 auto',
-                    padding: 16,
                     border: '1px solid #ddd',
                     borderRadius: 12,
                     background: '#fff',
                 }}
             >
-                
+                <h1 id="menetrend-heading">Menetrend</h1>
 
                 {/* Honnan */}
                 <div style={{ marginBottom: 12 }}>

@@ -69,20 +69,19 @@ export default function Login() {
   };
 
   return (
-    <div id="fedo">
-    <form
+    <div id="login-kontener">
+    <form id="login-form"
       onSubmit={(event) => {bejelentkezes(event)}}
       aria-labelledby="login-heading"
       style={{
-        maxWidth: 400,
         margin: "0 auto",
-        padding: 16,
+        justifyContent: 'center',
         display: "flex",
         flexDirection: "column",
         gap: 12,
       }}
     >
-      <h2 id="login-heading">Bejelentkezés</h2>
+      <h1 id="login-heading">Bejelentkezés</h1>
 
       <div>
         <label htmlFor="email">E-mail cím</label>
@@ -120,7 +119,7 @@ export default function Login() {
         </div>
       )} */}
 
-      <div style={{ display: "flex", gap: 8 }}>
+      <div id="login-gombok">
         <button type="submit"  style={{ flex: 1, padding: "10px 12px" }} onClick={bejelentkezes}>
           Bejelentkezés 
         </button>

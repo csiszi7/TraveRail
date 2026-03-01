@@ -7,15 +7,36 @@ body {
   padding-bottom: 120px; /* nagyobb mint a footer magassága */
 }
 
+#menetrend-heading {
+    text-align: center;
+    font-size: 3.2em;
+    color: black;
+}
+
+#menetrend-kontener {
+  max-width: 420px;
+margin: 100px auto 0px;
+/* padding: 20px; */
+/* border: 1px solid #ddd; */
+border-radius: 12px;
+background: #fafafa;
+/* background-color: rgba(34, 91, 213, 0.159); */
+box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#menetrend-form {
+  padding: 16px;
+}
+
 #fedo form {
-max-width: 420px;
+max-width: 450px;
 margin: 30px auto;
 padding: 20px;
 border: 1px solid #ddd;
 border-radius: 12px;
 background: #fafafa;
 box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-padding-bottom: 90px;
+/* padding-bottom: 90px; */
 }
 
 
@@ -74,7 +95,7 @@ margin-bottom: 20px;
   color: #66aaff;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
   footer {
 
@@ -96,7 +117,7 @@ margin-bottom: 20px;
   }
 
 
-  .menetrend-form {
-    padding-bottom: 25px;
+  #menetrend-form {
+    padding-bottom: 155px;
   }
 }
