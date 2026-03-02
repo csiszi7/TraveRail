@@ -87,7 +87,6 @@
   transform: scale(0.97);
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 750px) {
   .foglalas-tarto {
     padding-bottom: 150px;
@@ -96,8 +95,4 @@
   .foglalas-kepek {
     flex-direction: column;
   }
-=======
-@media screen and (max-width: 600px) {
-   
->>>>>>> 0f816836cde30b8d239fec9f581db7d41c56a386
 }
