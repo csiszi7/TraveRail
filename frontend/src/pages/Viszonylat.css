@@ -18,6 +18,7 @@
 .viszonylat-tarto {
   display: flex;
   flex-direction: column;
+  padding-bottom: 120px;
   padding-top: 64px; /* ⬅️ Navbar magassága */
 }
 
