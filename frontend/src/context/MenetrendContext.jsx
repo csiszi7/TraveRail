@@ -6,6 +6,7 @@ const MenetrendProvider = (props) => {
     const [viszonylatok, setViszonylatok] = useState([]);
     const [honnan, setHonnan] = useState('');
     const [hova, setHova] = useState('');
+    const [datum, setDatum] = useState('');
 
     const hon = localStorage.getItem('honnan');
 
@@ -16,6 +17,8 @@ const MenetrendProvider = (props) => {
         setHonnan(hon);
         const hov = JSON.parse(localStorage.getItem('hova'));
         setHova(hov);
+        const dat = JSON.parse(localStorage.getItem('datum'));
+        setDatum(dat);
     }, []);
     
     return (
@@ -27,6 +30,8 @@ const MenetrendProvider = (props) => {
                 setHonnan,
                 hova,
                 setHova,
+                datum,
+                setDatum,
             }}
         >
             {props.children}

@@ -8,13 +8,16 @@ const Jegy = () => {
   const [viszony, setViszony] = useState([]);
   const [kepek, setKepek] = useState([]);
   const [darab, setDarab] = useState(1);
+  const [dat, setDat] = useState('');
 
   useEffect(() => {
     const mentett = JSON.parse(localStorage.getItem("foglalas"));
+    const datum = JSON.parse(localStorage.getItem('datum'));
     if (mentett) {
       setJegy(mentett);
       setViszony(mentett.viszonylat);
       setKepek(mentett.viszonylat.kepek);
+      setDat(datum);
     }
   }, []);
 
@@ -66,7 +69,7 @@ const Jegy = () => {
     <div className="jegy-tarto">
       <h2>{jegy.honnan} → {jegy.hova}</h2>
 
-      <p><strong>Indulás:</strong> {jegy.idopont}</p>
+      <p><strong>Indulás:</strong> {dat}, {jegy.idopont}</p>
       <p><strong>Ár:</strong> {viszony.ar * 0.9} Ft </p>
 
       <p>Igényelt jegyek száma: </p>

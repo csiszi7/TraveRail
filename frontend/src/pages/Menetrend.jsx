@@ -13,7 +13,7 @@ const Menetrend = () => {
     const [date, setDate] = useState(new Date().toISOString().slice(0, 10));
     const [menetrendek, setMenetrendek] = useState([]);
     // const [time, setTime] = useState("00:00");
-    const { setViszonylatok, setHonnan, setHova } = useContext(MenetrendContext);
+    const { setViszonylatok, setHonnan, setHova, setDatum } = useContext(MenetrendContext);
 
     useEffect(() => {
         const leker = async () => {
@@ -59,6 +59,8 @@ const Menetrend = () => {
     const feldolgoz = (e) => {
         e.preventDefault();
         console.log({ from, to, mivel, date });
+        setDatum(date);
+        localStorage.setItem('datum', JSON.stringify(date));
         let viszonyokT = [];
         menetrendek.forEach((elem) => {
             // let tartalmaz = elem.allomasok.filter((item) => item === to);
@@ -93,19 +95,18 @@ const Menetrend = () => {
     };
 
     return (
-        <div id="fedo">
-            <form
+        <div id="menetrend-kontener">
+            <form id="menetrend-form"
                 style={{
                     maxWidth: 450,
                     margin: '0 auto',
-                    padding: 16,
                     border: '1px solid #ddd',
                     borderRadius: 12,
                     background: '#fff',
                     
                 }}
             >
-                
+                <h1 id="menetrend-heading">Menetrend</h1>
 
                 {/* Honnan */}
                 <div style={{ marginBottom: 12}}>

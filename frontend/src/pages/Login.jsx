@@ -69,23 +69,21 @@ export default function Login() {
   };
 
   return (
-    <div id="fedo">
-    <form
-      // onSubmit={(event) => {bejelentkezes(event)}}
+    <div id="login-kontener">
+    <form id="login-form"
+      onSubmit={(event) => {bejelentkezes(event)}}
       aria-labelledby="login-heading"
       style={{
-        maxWidth: 400,
         margin: "0 auto",
-        padding: 16,
+        justifyContent: 'center',
         display: "flex",
         flexDirection: "column",
         gap: 12,
       }}
     >
-      <h2 id="login-heading" style={{ color: "rgba(4, 24, 139, 1)", textAlign: "center", marginBottom: "20px", fontSize: "2.5rem", fontWeight: "bold", marginTop: "40px" }}>
-  Bejelentkezés
-</h2>
-      <div style={{ marginTop: "-15px" }}>
+      <h1 id="login-heading">Bejelentkezés</h1>
+
+      <div>
         <label htmlFor="email">E-mail cím</label>
         <input
           id="email"
@@ -121,8 +119,8 @@ export default function Login() {
         </div>
       )} */}
 
-      <div style={{ display: "flex", gap: 8 }}>
-        <button type="submit" id="bejelentkezes"  style={{ flex: 1, padding: "10px 12px" }} onClick={bejelentkezes}>
+      <div id="login-gombok">
+        <button type="submit"  style={{ flex: 1, padding: "10px 12px" }} onClick={bejelentkezes}>
           Bejelentkezés 
         </button>
         <p>Ha még nem regisztrált:</p>

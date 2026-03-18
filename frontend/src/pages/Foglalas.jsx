@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./Foglalas.css";
+import { MenetrendContext } from "../context/MenetrendContext";
 
 const Foglalas = () => {
   const [adat, setAdat] = useState({});
@@ -7,14 +8,19 @@ const Foglalas = () => {
   const [hova, setHova] = useState('');
   const[idopont, setIdopont] = useState('');
   const[kedvezmenyek, setKedvezmenyek] = useState([]);
+  const[dat, setDat] = useState('');
 
   useEffect(() => {
+    // console.log(datum);
+    
     const mentett = JSON.parse(localStorage.getItem('foglalas'));
+    const datum = JSON.parse(localStorage.getItem('datum'));
     const hon = JSON.parse(localStorage.getItem('honnan'));
   	const hov = JSON.parse(localStorage.getItem('hova'));
     setHonnan(hon);
     setHova(hov);
     setIdopont(mentett.idopont);
+    setDat(datum);
     console.log(mentett);
     setKedvezmenyek(mentett.viszonylat.kedvezmeny);
 
@@ -36,7 +42,7 @@ const Foglalas = () => {
       <h2>{honnan} → {hova}</h2>
 
       <div className="foglalas-info">
-        <p><strong>Indulás:</strong> {idopont}</p>
+        <p><strong>Indulás:</strong> {dat}, {idopont}</p>
         <p><strong>Ár:</strong> {adat.ar} Ft</p>
         <p><strong>Járat:</strong> {adat.jarat}</p>
         <p><strong>Járat indul:</strong> {adat.induloallomas}</p>
