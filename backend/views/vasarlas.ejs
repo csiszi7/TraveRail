@@ -1,8 +1,0 @@
-<li>
-	<%= idopont.toString().split('GMT')[0] %>
-	<div class="user-menetrendek">
-		<% konyvek.forEach(item => { %>
-			<%- include('./schedule.ejs', { item }) %>
-		<% }) %>
-	</div>
-</li>
